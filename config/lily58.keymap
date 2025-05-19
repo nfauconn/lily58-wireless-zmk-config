@@ -5,6 +5,10 @@
 
 #ifdef CONFIG_ZMK_SPLIT_ROLE_CENTRAL
     macros {
+        compatible = "zmk,macros";
+        #address-cells = <1>;
+        #size-cells = <0>;
+
         macro_0 {
             compatible = "zmk,behavior-macro";
             label = "macro_0";
