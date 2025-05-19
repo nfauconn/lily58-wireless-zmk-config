@@ -3,62 +3,78 @@
     compatible = "zmk,keymap";
 
     layers {
-  layer_0 {
-    bindings = <
-      &kp ESC &kp 1 &kp 2 &kp 3 &kp 4 &kp 5
-      &kp TAB &kp Q &kp W &kp E &kp R &kp T
-      &kp LSFT &kp A &kp S &kp D &kp F &kp G
-      &kp LCTL &kp Z &kp X &kp C &kp V &kp B
-      &kp NO &kp LALT &kp LGUI &mo 1 &kp SPC &kp LBRC
-      &kp MINS &kp 0 &kp 9 &kp 8 &kp 7 &kp 6
-      &kp BSLS &kp P &kp O &kp I &kp U &kp Y
-      &kp RSFT &kp SCLN &kp L &kp K &kp J &kp H
-      &kp RCTL &kp SLSH &kp DOT &kp COMM &kp M &kp N
-      &kp NO &kp RALT &kp RGUI &kp BSPC &kp ENT &kp RBRC
-    >;
-  };
-  layer_1 {
-    bindings = <
-      &kp GRV &kp MUTE &kp VOLD &kp VOLU &kp MSTP &kp MPLY
-      &kp ESC &skp 1 &skp 2 &skp 3 &skp 4 &skp 5
-      &kp TRNS &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp TRNS &kp NO &kp BRID &kp BRIU &kp NO &kp NO
-      &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
-      &kp EQL &kp F11 &kp MFFD &kp MRWD &kp MNXT &kp MPRV
-      &skp BSLS &skp 0 &skp 9 &skp 8 &skp 7 &skp 6
-      &kp TRNS &kp QUOT &kp RGHT &kp UP &kp DOWN &kp LEFT
-      &kp TRNS &kp NO &kp NO &kp NO &kp PSCR &kp NO
-      &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
-    >;
-  };
-  layer_2 {
-    bindings = <
-      &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
-      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6
-      &kp RGB_TOG &kp RGB_HUI &kp RGB_SAI &kp RGB_VAI &kp TRNS &kp TRNS
-      &kp RGB_MOD &kp RGB_HUD &kp RGB_SAD &kp RGB_VAD &kp TRNS &kp TRNS
-      &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
-      &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
-      &kp F12 &kp F11 &kp F10 &kp F9 &kp F8 &kp F7
-      &kp NO &kp RGHT &kp UP &kp DOWN &kp LEFT &kp NO
-      &kp TRNS &kp BSLS &kp RBRC &kp LBRC &kp EQL &skp EQL
-      &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
-    >;
-  };
-  layer_3 {
-    bindings = <
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp NO
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
-      &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp NO
-    >;
-  };
+      layer_0 {
+        bindings = <
+          layer_0 {
+          bindings = <
+          &kp ESC &kp 1 &kp 2 &kp 3 &kp 4 &kp 5
+          &kp TAB &kp Q &kp W &kp E &kp R &kp T
+          &kp LSFT &kp A &kp S &kp D &kp F &kp G
+          &kp LCTL &kp Z &kp X &kp C &kp V &kp B
+          &kp NO &kp LALT &kp LGUI &mo 1 &kp SPC &kp LBRC
+          &kp MINS &kp 0 &kp 9 &kp 8 &kp 7 &kp 6
+          &kp BSLS &kp P &kp O &kp I &kp U &kp Y
+          &kp RSFT &kp SCLN &kp L &kp K &kp J &kp H
+          &kp RCTL &kp SLSH &kp DOT &kp COMM &kp M &kp N
+          &kp NO &kp RALT &kp RGUI &kp BSPC &kp ENT &kp RBRC
+          >;
+          };
+        >;
+      };
+      layer_1 {
+        bindings = <
+          layer_1 {
+          bindings = <
+          &kp GRV &kp MUTE &kp VOLD &kp VOLU &kp MSTP &kp MPLY
+          &kp ESC &skp 1 &skp 2 &skp 3 &skp 4 &skp 5
+          &kp TRNS &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp TRNS &kp NO &kp BRID &kp BRIU &kp NO &kp NO
+          &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+          &kp EQL &kp F11 &kp MFFD &kp MRWD &kp MNXT &kp MPRV
+          &skp BSLS &skp 0 &skp 9 &skp 8 &skp 7 &skp 6
+          &kp TRNS &kp QUOT &kp RGHT &kp UP &kp DOWN &kp LEFT
+          &kp TRNS &kp NO &kp NO &kp NO &kp PSCR &kp NO
+          &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+          >;
+          };
+        >;
+      };
+      layer_2 {
+        bindings = <
+          layer_2 {
+          bindings = <
+          &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+          &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6
+          &kp RGB_TOG &kp RGB_HUI &kp RGB_SAI &kp RGB_VAI &kp TRNS &kp TRNS
+          &kp RGB_MOD &kp RGB_HUD &kp RGB_SAD &kp RGB_VAD &kp TRNS &kp TRNS
+          &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+          &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+          &kp F12 &kp F11 &kp F10 &kp F9 &kp F8 &kp F7
+          &kp NO &kp RGHT &kp UP &kp DOWN &kp LEFT &kp NO
+          &kp TRNS &kp BSLS &kp RBRC &kp LBRC &kp EQL &skp EQL
+          &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
+          >;
+          };
+        >;
+      };
+      layer_3 {
+        bindings = <
+          layer_3 {
+          bindings = <
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp NO
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp NO &kp NO &kp NO &kp NO &kp NO
+          &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp NO
+          >;
+          };
+        >;
+      };
     };
   };
 };
