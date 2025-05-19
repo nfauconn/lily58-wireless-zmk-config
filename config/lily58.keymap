@@ -2,17 +2,18 @@
   keymap {
     compatible = "zmk,keymap";
 
-    #ifdef CONFIG_ZMK_SPLIT_ROLE_CENTRAL
+
+#ifdef CONFIG_ZMK_SPLIT_ROLE_CENTRAL
     macros {
         macro_0 {
             compatible = "zmk,behavior-macro";
             label = "macro_0";
-            bindings = <&macro_tap &kp ESC &str ":w" &kp ENTER>;
+            bindings = <&macro_tap &kp ESC &kp COLON &kp W &kp ENTER>;
         };
         macro_1 {
             compatible = "zmk,behavior-macro";
             label = "macro_1";
-            bindings = <&macro_tap &kp ESC &str ":q" &kp ENTER>;
+            bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp ENTER>;
         };
     };
 #endif
