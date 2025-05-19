@@ -8,12 +8,12 @@
         macro_0 {
             compatible = "zmk,behavior-macro";
             label = "macro_0";
-            bindings = <&macro_tap &kp ESC &kp COLON &kp W &kp ENTER>;
+            bindings = <&macro_tap &kp ESC &skp SEMI &kp W &kp ENTER>;
         };
         macro_1 {
             compatible = "zmk,behavior-macro";
             label = "macro_1";
-            bindings = <&macro_tap &kp ESC &kp COLON &kp Q &kp ENTER>;
+            bindings = <&macro_tap &kp ESC &skp SEMI &kp Q &kp ENTER>;
         };
     };
 #endif
