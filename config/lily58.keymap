@@ -2,22 +2,6 @@
   keymap {
     compatible = "zmk,keymap";
 
-
-#ifdef CONFIG_ZMK_SPLIT_ROLE_CENTRAL
-    macros {
-        compatible = "zmk,macros";
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        macro_0 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&macro_tap &kp ESC &kp LS &kp SEMI &kp W &kp ENTER>;
-        };
-    };
-#endif
-
-
     layers {
   layer_0 {
     bindings = <
@@ -37,7 +21,7 @@
     bindings = <
       &kp GRV &kp MUTE &kp VOLD &kp VOLU &kp MSTP &kp MPLY
       &kp ESC &skp 1 &skp 2 &skp 3 &skp 4 &skp 5
-      &kp TRNS &macro_0 &kp NO &kp NO &kp NO &kp NO
+      &kp NO &kp NO &kp NO &kp NO &kp NO
       &kp TRNS &kp NO &kp BRID &kp BRIU &kp NO &kp NO
       &kp NO &kp TRNS &kp TRNS &kp TRNS &kp TRNS &kp TRNS
       &kp EQL &kp F11 &kp MFFD &kp MRWD &kp MNXT &kp MPRV
