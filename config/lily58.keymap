@@ -16,11 +16,11 @@
         compatible = "zmk,keymap";
         default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   -   |
-// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   \   |
-// | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   | SHIFT |
-// |  CTRL |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | CTRL  |
-//                     | LALT  | LGUI  | LOWER |  SPACE |  | ENTER | BSPC | RGUI  | RALT   |
+// |  ESC  | 1!  |  2@ |  3#  | 4$   | 5%   |                   | 6^   |  7&   |  8*   | 9(   |  0)   |   -_  |
+// |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   \|  |
+// |LSHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |  ;:   | RSHIFT|
+// | LCTRL |  Z  |  X  |  C   |  V   |  B   |  [{  |     |  ]}  |  N   |  M    |  ,<   |  .>  |  /?   | RCTRL |
+//                | LALT  | LGUI  | LOWER |  SPACE |      | ENTER | BSPC | RGUI  | RALT   |
             display-name = "Base";
             bindings = <
 &kp ESC   &kp N1 &kp N2 &kp N3   &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9  &kp N0   &kp MINUS
@@ -33,11 +33,11 @@
 
         lower_layer {
 // ------------------------------------------------------------------------------------------------------------
-// | `     |Mute  |vol- |vol+ |      |play/pause|               | prev | next  |       |      |       |  =/+  |
-// |   Esc |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |  '|'  |
-// | trans |     |     |      |      |      | trans |  | trans | left | down  |  up   |right |  '/"  | trans  |
-// | trans |     |bri- | bri+ |      |      | trans |  | trans |      |       |       |      |       | trans  |
-//                  | trans | trans | trans | trans |  | trans | trans | trans | trans |
+// |  `~   |Mute  |vol- |vol+ |      |play/pause|               | prev | next  |       |      |       |  =+   |
+// |   Esc |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |  |    |
+// |LSHIFT | M0  |     |      |      |      |                   | left | down  |  up   |right |  '"   | RSHIFT|
+// |LCTRL  |     |bri- | bri+ |      |      | [{ |         | ]} |      |       |       |      |       | RCTRL |
+//                | LALT  | LGUI  | LOWER |  SPACE |      | ENTER | BSPC | RGUI  | RALT   |
             display-name = "Lower";
             bindings = <
 &kp GRAVE  &kp C_MUTE       &kp C_VOL_DN      &kp C_VOL_UP      &none        &kp C_PP                     &kp C_PREV    &kp C_NEXT    &none             &none       &none       &kp EQUAL
