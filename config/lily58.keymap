@@ -32,18 +32,23 @@
         };
 
         lower_layer {
+// bt_prev: select previous profile
+// bt_next: select next profile
+// bt_sel <number>: select profile <number>
+// bt_clr: clear bt profile of the current profile
+// bt_clra: clear ALL bt profiles
 // ------------------------------------------------------------------------------------------------------------
 // |  `~   |Mute  |vol- |vol+ |      |play/pause|               | prev | next  |       |      |       |  =+   |
 // |   Esc |  !  |  @  |  #   |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |  |    |
-// |LSHIFT | M0  |     |      |      |      |                   | left | down  |  up   |right |  '"   | RSHIFT|
-// |LCTRL  |     |bri- | bri+ |      |      | [{ |         | ]} |      |       |       |      |       | RCTRL |
+// |LSHIFT | M0  |b_prv|bt_nxt|bt_sel|bt_clr|                   | left | down  |  up   |right |  '"   | RSHIFT|
+// |LCTRL  |     |bri- | bri+ |bt_clra|     | [{ |         | ]} |      |       |       |      |       | RCTRL |
 //                | LALT  | LGUI  | LOWER |  SPACE |      | ENTER | BSPC | RGUI  | RALT   |
             display-name = "Lower";
             bindings = <
 &kp GRAVE  &kp C_MUTE       &kp C_VOL_DN      &kp C_VOL_UP      &none        &kp C_PP                     &kp C_PREV    &kp C_NEXT    &none             &none       &none       &kp EQUAL
 &kp ESC    &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET     &kp AMPS      &kp KP_MULTIPLY   &kp LPAR    &kp RPAR    &kp PIPE
-&trans     &vim_save        &none             &none             &none        &none                        &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT   &kp SQT     &trans
-&trans     &none            &kp C_BRI_DN      &kp C_BRI_UP      &none        &none     &trans   &trans    &none         &none         &none             &none       &none       &trans
+&trans     &vim_save        &bt BT_PRV        &bt BT_NXT        &bt BT_SEL   &bt BT_CLR                   &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT   &kp SQT     &trans
+&trans     &none            &kp C_BRI_DN      &kp C_BRI_UP      &bt BT_CLR_ALL &none   &trans   &trans    &none         &none         &none             &none       &none       &trans
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
         };
