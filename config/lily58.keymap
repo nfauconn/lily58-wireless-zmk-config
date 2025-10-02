@@ -47,7 +47,7 @@
             bindings = <
 &kp GRAVE  &kp C_MUTE       &kp C_VOL_DN      &kp C_VOL_UP      &none        &kp C_PP                     &kp C_PREV    &kp C_NEXT    &none             &none       &none       &kp EQUAL
 &kp ESC    &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET     &kp AMPS      &kp KP_MULTIPLY   &kp LPAR    &kp RPAR    &kp PIPE
-&trans     &vim_save        &bt BT_PRV        &bt BT_NXT        &bt BT_SEL   &bt BT_CLR                   &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT   &kp SQT     &trans
+&trans     &vim_save        &bt BT_PRV        &bt BT_NXT        &bt BT_SEL 0 &bt BT_CLR                   &kp LEFT      &kp DOWN      &kp UP            &kp RIGHT   &kp SQT     &trans
 &trans     &none            &kp C_BRI_DN      &kp C_BRI_UP      &bt BT_CLR_ALL &none   &trans   &trans    &none         &none         &none             &none       &none       &trans
                                               &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans
             >;
